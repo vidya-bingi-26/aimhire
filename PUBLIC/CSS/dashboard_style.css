@@ -1,0 +1,404 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-text: #0eb5c4;
+    --light-gray-text: #ababab;
+}
+
+.dashboard {
+    background-color: #F9F9F9;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 0 30px;
+    padding: 40px 130px;
+    /* align-items: flex-start; */
+    /* border: 2px solid green; */
+}
+
+.left-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 700px;
+    width: 320px;
+    overflow: hidden;
+    /* border: 2px solid blue; */
+}
+
+.right-sec {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border-radius: 5px;
+    overflow: hidden;
+    gap: 20px;
+    padding: 5px 10px;
+    height: 700px;
+    overflow-y: auto;
+    /* border: 2px solid red; */
+}
+/* Hide the default scrollbar */
+.right-sec::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+  /* Optionally, style a custom scrollbar (for webkit browsers) */
+  .right-sec::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 10px;
+  }
+  
+  .right-sec::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+.abt-user {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.03);
+    padding: 1.5rem 2rem;
+    gap: 20px;
+}
+.user-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.username {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.abt-user .role {
+    color: var(--light-gray-text);
+}
+
+.edit-button {
+    height: 40px;
+    width: 180px;
+    background-color: #C8ECFF;
+    /* border: 1px solid white; */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.dashboard-button {
+    height: 40px;
+    width: 180px;
+    border: 2px var(--primary-text) solid;
+    border-radius: 10px;
+    color: var(--primary-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abt-user .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.work-experience {
+    background-color: white;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.03);
+}
+
+.section-heading {
+    color: var(--primary-text);
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.exp-category {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.exp-category .exp-heading {
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.exp-category .company-name {
+    margin-left: 10px;
+    font-size: 15px;
+    color: var(--light-gray-text);
+}
+
+.skills {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top:10px ;
+    /* width: 100%; */
+}
+
+.skill-box {
+    padding: 3px 1rem;
+    
+    border-radius: 50px;
+    /* border: 2px solid #FF5EF9;
+    background-color: #f58bff44; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+
+}
+
+.abt-user .profile-pic{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+.abt-user .profile-pic img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.job-card-left-sec .loc-income{
+    color: #ababab;
+}
+.applicant-card-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+/* job card style */
+.jobCard{
+    width: 100%;
+    /* border: 2px solid green; */
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    gap: 18px 0;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.jobCard .jobcard-upper-container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.jobCard .jobcard-upper-container .jobCard-upper-left-box{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    width: 100%;
+    gap: 10px 0;
+    /* border: 2px solid blue; */
+}
+.jobCard .jobcard-upper-container .jobCard-upper-left-box h2{
+    font-size: 23px;
+    font-weight: 500;
+    color: #333;
+}
+.jobCard .jobcard-upper-container .jobCard-upper-left-box p{
+    font-size: 15px;
+    color: #a1a1a1;
+}
+.jobCard .jobcard-upper-container .jobCard-upper-right-box{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 10%;
+    /* border: 2px solid pink; */
+    align-items: flex-start;
+}
+.jobCard .jobcard-upper-container .jobCard-upper-right-box img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.jobCard .jobcard-lower-container{
+    display: flex;
+    justify-content: space-between;
+}
+.jobCard .jobcard-lower-container .jobcard-lower-left-box{
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0;
+}
+.jobCard .jobcard-lower-container .jobcard-lower-left-box .about-job-card-container{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 0 15px;
+}
+.jobCard .jobcard-lower-container .about-job-card-box{
+    width: 132px;
+    height: 36px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jobCard .jobcard-lower-container .about-job-card-box p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 7px;
+    font-weight: 600;
+}
+.jobCard .jobcard-lower-container .about-job-card-box p i{
+    font-size: 16px;
+}
+.jobCard .jobcard-lower-container .work-type{
+    border: 2px solid #FF5EF9;
+    color: #FF5EF9;
+    background-color: rgba(255, 94, 249, 0.1);
+
+}
+.jobCard .jobcard-lower-container .work-mode{
+    border: 2px solid #0897FF;
+    color: #0897FF;
+    background-color: rgba(8, 151, 255, 0.12);
+}
+.jobCard .jobcard-lower-container .experience{
+    border: 2px solid #00BD40;
+    color: #00BD40;
+    background-color: rgba(0, 189, 64, 0.12);
+}
+
+.jobCard .jobcard-lower-container .jobcard-lower-left-box .job-location-sal-box{
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    color: #878787;
+}
+.jobCard .jobcard-lower-container .jobcard-lower-right-box{
+    height: 100%;
+    /* border: 2px solid gold; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jobCard .jobcard-lower-container .jobcard-lower-right-box .status-box{
+    height: 34px;
+    border: 2px solid #0eb5c4;
+    border-radius: 5px;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-application{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    gap: 0 0;
+}
+.no-application img{
+    width: 35%;
+}
+.no-application h3{
+    color: var(--dark-grey);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+/* notification style */
+
+
+#toastBox{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+    font-family: 'Poppins';
+  }
+  
+  .toast{
+    width:400px;
+    height: 80px;
+    background-color: white;
+    font-weight: 500;
+    font-family: 'Poppins';
+    margin: 15px 0;
+    box-shadow: 0 0 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform: translateX(100%);
+    animation: moveleft 0.5s linear forwards;
+  }
+  
+  @keyframes moveleft {
+    100%{
+      transform: translateX(0);
+    }
+  }
+  .toast i{
+    margin: 0 20px;
+    font-size: 35px;
+    color: green;
+  }
+  
+  .toast.deleted i{
+    color: orangered;
+  }
+  
+  .toast::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: green;
+    animation: anim 5s linear forwards;
+  }
+  
+  @keyframes anim {
+    100% {
+      width :0;
+    }
+  }
+  
+  .toast.deleted::after{
+    background-color: orangered;
+  }

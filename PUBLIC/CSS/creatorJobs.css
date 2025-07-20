@@ -1,0 +1,317 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f4f4f4;
+  flex-grow: 1;
+  margin-top: -4vh;
+}
+
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.addJobCard {
+  height: 272px;
+  width: 294px;
+  background-color: #ACACAC;
+  /* padding: 5px 10px; */
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addJobCard i{
+  font-size: 8rem;
+  color: #333;
+}
+
+.addSymbol{
+  width: 120px;
+  height: 120px;
+}
+
+.jobcard {
+  
+  height: 282px;
+  width: 294px; 
+  background-color: #FFFFFF;
+  padding: 5px 10px;
+  border-radius: 12px;
+  position: relative;
+  padding: 1.5rem;
+}
+
+
+
+.jobcard h{
+  margin:auto;
+  font: "poppins";
+  font-size: 18px;
+}
+
+.jobcard date{
+  color: #0EB5C4;
+  font-size: 15px;
+  position: absolute;
+  right:10px;
+  top:10px;
+  
+}
+
+.jobcard .cardInfo ul{
+  list-style-type: none;
+}
+
+.cardInfo ul{
+  font :"poppins";
+  font-size: 15px;
+  color: #ACACAC;
+}
+
+.cardInfo desc{
+  font :"poppins";
+  font-size: 15px;
+  color:#333;
+  display: flex;
+}
+
+.jobcard button{
+  height: 40px;
+  width: 140px;
+  border-radius: 50px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background-color: #333;
+}
+
+.jobcard button bu{
+  color: #f4f4f4;
+  font: "poppins";
+  font-size: 15px;
+  text-align: center;
+}
+
+button :hover{
+  cursor: pointer;
+}
+
+.jobcard .deleteIcon{
+  color: #333;
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+  bottom :20px;
+}
+
+.jobcard .deleteIcon:hover{
+  cursor: pointer;
+};
+
+/* view details */
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  float: left;
+  margin-left: 20px;
+}
+
+.card1, .card2 {
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card1 ul{
+  padding: 25px;
+  color: #666;
+}
+
+.card1 h2 {
+  padding-left: 25px ;
+  font-size: 25px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card1 dueDate{
+  color: #0EB5C4;
+  font-size: 20px;
+  position: absolute;
+  right:20px;
+  top:20px;
+  padding-right: 25px;
+  
+}
+
+.job-tags {
+  padding-left: 20px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.job-tags span {
+  /* padding: 15px 20px; */
+  border-radius: 6px;
+  /* font-size: 0.9rem; */
+  font-size: 15px;
+  width: 132px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+  font-weight: 500;
+}
+
+.job-type {border: 2.5px solid #FF5EF9;
+  background-color: #ffd5fe;
+  color: #FF5EF9; }
+.job-mode { background-color: #e0f7fa; color: #00bcd4; border: 2px solid rgb(29, 197, 254) }
+.experience { background-color: #e8f5e9; color: #4caf50; border: 2px solid #4caf50 }
+
+
+.card2 h3, .card3 h3 {
+  padding-left: 25px;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card2 p {
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.right-column {
+  width: 30%;
+  float: right;
+  margin-right: 20px;
+}
+
+.card3 {
+  
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.requirements div {
+  padding-left: 25px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.requirements strong {
+  font-size: 0.9rem;
+  color:#0EB5C4;
+}
+
+.skill-box {
+  padding: 3px 1rem;
+  border-radius: 50px;
+  display: inline-flex; /* Change to inline-flex for horizontal alignment */
+  justify-content: center;
+  align-items: center;
+  font-size: 14px; /* Adjust font size for readability */
+  font-weight: 500;
+  margin: 5px; /* Add some space between skill boxes */
+}
+
+.skills-card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* notification style */
+
+
+#toastBox{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+  font-family: 'Poppins';
+}
+
+.toast{
+  width:400px;
+  height: 80px;
+  background-color: white;
+  font-weight: 500;
+  font-family: 'Poppins';
+  margin: 15px 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px, rgba(0, 0, 0, 0.22) 0px -5px 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transform: translateX(100%);
+  animation: moveleft 0.5s linear forwards;
+  border-radius: 10px;
+    overflow: hidden;
+}
+
+@keyframes moveleft {
+  100%{
+    transform: translateX(0);
+  }
+}
+.toast i{
+  margin: 0 20px;
+  font-size: 35px;
+  color: green;
+}
+
+.toast.deleted i{
+  color: orangered;
+}
+
+.toast::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: green;
+  animation: anim 5s linear forwards;
+}
+
+@keyframes anim {
+  100% {
+    width :0;
+  }
+}
+
+.toast.deleted::after{
+  background-color: orangered;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "job-portal-final",
+  "version": "1.0.0",
+  "description": "This is super 30 project, team members Amrik Bhadra, Srivaths Iyer, Vidya Bingi, Riddhi Dethe, Vidhisha Deshmukh",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Indigo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "md5": "^2.3.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.9.14",
+    "nodemon": "^3.1.4",
+    "randomstring": "^1.3.0"
+  }
+}
